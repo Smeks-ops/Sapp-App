@@ -1,0 +1,94 @@
+@import './assets/scss/main.scss';
+
+.App {
+  display: flex;
+  height: 100vh;
+  
+  > div {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .background {
+    background-color: #18345E;
+    color: var(--color-white);
+    text-align: center;
+
+    h3 {
+      font-size: 30px;
+      font-weight: 600;
+      line-height: 60px;
+      @media (max-width: 768px) {
+        font-size: 20px;
+      }
+    }
+
+    p {
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 40px;
+    }
+    
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  .auth-form {
+    > div {
+      h1 {
+        margin-top: 28px;
+        font-size: 48px;
+        font-weight: 700;
+        @media (max-width: 768px) {
+          font-size: 38px;
+        }
+      }
+      width: 464px;
+      @media (max-width: 1024px) {
+        width: 300px;
+      }
+    }
+
+    .input {
+      position: relative;
+
+      img {
+        position: absolute;
+        top: 43px;
+        right: 12px;
+      }
+    }
+
+    .foot-info {
+      margin-top: 16px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+
+    .password-checks {
+      margin-bottom: 23px;
+
+      .password-check {
+        display: flex;
+        align-items: center;
+        p {
+          margin-left: 12px;
+        }
+      }
+    }
+  }
+
+}
+
+.home-bg {
+  background-color: #18345E;
+  color: var(--color-white);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,29 @@
+:root {
+	--page-container-margin: 1.25rem;
+	--color-black: #18345E;
+	--color-black-rgb: 24, 52, 94;
+	--light-grey-color: #62687a;
+	--lighter-grey-color: #8f9bb3;
+	--primary-color: #F0AB20;
+	--primary-color-rgb: 240, 171, 32;
+	--color-secondary: #22C1DC;
+	--color-white: #ffffff;
+	--danger-color: #ff3d3d;
+
+	--section-max-width: 1200px;
+
+	@media (min-width: 800px) {
+		--page-container-margin: 8.4375rem;
+	}
+}
+
+@import './fonts';
+@import './reset';
+@import './page';
+@import './mixins';
+@import './button';
+@import './form';
+
+form .btn {
+	transition: all 0.5s;
+}

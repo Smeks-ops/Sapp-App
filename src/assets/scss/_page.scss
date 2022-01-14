@@ -1,0 +1,44 @@
+.section-heading {
+	font-weight: 900;
+	font-size: 25px;
+	line-height: 40px;
+	letter-spacing: 0.2px;
+}
+
+.section-sub-heading {
+	font-size: 24px;
+	line-height: 40px;
+	font-weight: 700;
+
+	@media (min-width: 800px) {
+		font-size: 31px;
+	}
+}
+
+.section-description {
+	line-height: 25px;
+
+	&:not(:first-child) {
+		margin-top: 30px;
+	}
+}
+
+.text-primary {
+	color: var(--primary-color);
+}
+
+.text-secondary {
+	color: var(--color-secondary);
+}
+
+.text-center {
+	text-align: center;
+}
+
+.text-danger {
+	color: var(--danger-color);
+}
+
+.pointer-cursor {
+	cursor: pointer;
+}
